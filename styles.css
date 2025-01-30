@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  background-image: url("96FAA68A-B5B0-4884-B381-BE1CB09BA63F.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: scroll;
+}
+
+#navBar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 7.7%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+  z-index: 9;
+
+}
+#navBar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 47px;
+  color: black;
+  padding-bottom: 5px;
+  font-size: 34px;
+  border-radius: 14px;
+  background-color: rgb(230, 230, 230);
+}
+#navBar button:hover {
+  background-color: rgba(230, 230, 230, 0.8);
+}
+#navBar button:active {
+  background-color: rgb(230, 230, 230);
+}
+
+#mainHeaders {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  width: 100%;
+  color: dimgrey;
+  line-height: 1.7;
+  font-family: "Poppins";
+  transform: translate(0, -6%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+#stories {
+  display: grid;
+  justify-content: center;
+  row-gap: 5vh;
+  grid-template: repeat(4, 25.8vh) 50px / repeat(5, 19%);
+  height: 70vh;
+  width: 100%;
+  overflow: scroll;
+}
+.story {
+  display: flex;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: scroll;
+  border: 2px solid grey;
+}
+.story h2 {
+  font-family: "Poppins";
+  font-size: 40px;
+  text-align: center;
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+}
+.story p {
+  font-size: 20px;
+  padding: 3px;
+  width: 50%;
+  border-left: 2px solid grey;
+}
+#story1 {
+  grid-column: 2 / span 4;
+  grid-row: 1 / 2;
+}
+#story2 {
+  grid-column: 1 / span 4;
+  grid-row: 2 / 3;
+}
+#story3 {
+  grid-column: 2 / span 4;
+  grid-row: 3 / 4;
+}
+#story4 {
+  grid-column: 1 / span 4;
+  grid-row: 4 / 5;
+}
+
+@media only screen and (max-width: 993px) {
+  .story h2 {
+    font-size: 35px;
+  }
+  .story p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .story h2 {
+    font-size: 25px;
+  }
+  .story p {
+    font-size: 13px;
+  }
+}
+
